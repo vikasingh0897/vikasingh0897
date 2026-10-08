@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://vikasingh0897.vercel.app
+
+# Sitemaps
+Sitemap: https://vikasingh0897.vercel.app/sitemap.xml

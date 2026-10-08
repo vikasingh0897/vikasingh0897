@@ -1,0 +1,24 @@
+{
+  "sectionTag": "01 // ABOUT ME",
+  "avatar": "/vikasingh0897.webp",
+  "resume": "/resume_vikasingh0897.pdf",
+  "role": "Full Stack Developer",
+  "company": "@Web3task",
+  "bioPara": "I’m a Full-Stack Engineer passionate about building fast, reliable, and user-friendly web applications. I work on both frontend and backend development, build APIs, manage databases, and write clean, efficient code. I enjoy learning new technologies and turning ideas into practical solutions.",
+  "achievements": [
+    {
+      "id": "pull-shark",
+      "title": "Pull Shark",
+      "description": "Merged pull requests into active repositories",
+      "badgeUrl": "/badges/pull-shark.png",
+      "githubUrl": "https://github.com/vikasingh0897?achievement=pull-shark&tab=achievements"
+    },
+    {
+      "id": "quickdraw",
+      "title": "Quickdraw",
+      "description": "Closed an issue or pull request within 5 minutes of opening",
+      "badgeUrl": "/badges/quickdraw.png",
+      "githubUrl": "https://github.com/vikasingh0897?achievement=quickdraw&tab=achievements"
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+@import "tailwindcss";
+@source "../..";
+
+@layer base {
+  :root {
+    --background: #07090e;
+    --foreground: #f1f5f9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #07090e;
+    color: #f1f5f9;
+    font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Grid Pattern Background */
+.bg-tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-tech-dots {
+  background-size: 28px 28px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}
+
+/* Radial Glow Masks */
+.mask-radial-faded {
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 20%, #000 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 20%, #000 60%, transparent 100%);
+}
+
+.mask-top-bottom-faded {
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(15, 23, 42, 0.75);
+  border-color: rgba(6, 182, 212, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(6, 182, 212, 0.15);
+}
+
+/* Shimmer & Glow Effects */
+.glow-cyan {
+  box-shadow: 0 0 35px -5px rgba(6, 182, 212, 0.25);
+}
+
+.glow-purple {
+  box-shadow: 0 0 35px -5px rgba(168, 85, 247, 0.25);
+}
+
+/* =========================================================================
+   TECH TREE & INTERACTIVE ANIMATIONS
+   ========================================================================= */
+
+@keyframes dash-flow-left {
+  from {
+    stroke-dashoffset: 14;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-flow-right {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 14;
+  }
+}
+
+.animate-dash-left {
+  animation: dash-flow-left 1.2s linear infinite;
+}
+
+.animate-dash-right {
+  animation: dash-flow-right 1.2s linear infinite;
+}
+
+@keyframes beam-travel {
+  0% {
+    top: -5%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    top: 105%;
+    opacity: 0;
+  }
+}
+
+.animate-beam-travel {
+  animation: beam-travel 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes radar-ripple {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(2.3);
+    opacity: 0;
+  }
+}
+
+.animate-radar-ripple {
+  animation: radar-ripple 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmer-sweep 2.5s ease-in-out infinite;
+}
+
+@keyframes snake-flow {
+  0% {
+    stroke-dashoffset: 52;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-snake-flow {
+  animation: snake-flow 2s linear infinite;
+}
+
+/* Tech Orbit Animations */
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes counter-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counter-spin-reverse {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-orbit-spin {
+  animation: orbit-spin 26s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-spin-reverse 40s linear infinite;
+}
+
+.animate-counter-spin {
+  animation: counter-spin 26s linear infinite;
+}
+
+.animate-counter-reverse {
+  animation: counter-spin-reverse 40s linear infinite;
+}
+
+@keyframes tech-pulse-glow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04);
+  }
+}
+
+.animate-tech-glow {
+  animation: tech-pulse-glow 3.5s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* =========================================================================
+   SOCIAL ICONS BRAND BASE COLOR AMBIENT LIGHT & GLOW EFFECTS
+   ========================================================================= */
+
+.social-glow-github {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.social-glow-github:hover {
+  border-color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.55), inset 0 0 14px rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+.social-glow-github:hover .social-icon {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 16px rgba(255, 255, 255, 0.6));
+  color: #ffffff !important;
+  transform: scale(1.15);
+}
+
+.social-glow-linkedin {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.social-glow-linkedin:hover {
+  border-color: rgba(10, 102, 194, 0.9) !important;
+  background-color: rgba(10, 102, 194, 0.2) !important;
+  box-shadow: 0 0 28px rgba(10, 102, 194, 0.7), inset 0 0 14px rgba(10, 102, 194, 0.3) !important;
+  transform: translateY(-2px);
+  color: #4da3ff !important;
+}
+.social-glow-linkedin:hover .social-icon {
+  filter: drop-shadow(0 0 8px rgba(10, 102, 194, 1)) drop-shadow(0 0 18px rgba(10, 102, 194, 0.7));
+  color: #0a66c2 !important;
+  transform: scale(1.15);
+}
+
+.social-glow-email {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.social-glow-email:hover {
+  border-color: rgba(234, 67, 53, 0.85) !important;
+  background-color: rgba(234, 67, 53, 0.2) !important;
+  box-shadow: 0 0 28px rgba(234, 67, 53, 0.65), inset 0 0 14px rgba(234, 67, 53, 0.28) !important;
+  transform: translateY(-2px);
+  color: #ff6b6b !important;
+}
+.social-glow-email:hover .social-icon {
+  filter: drop-shadow(0 0 8px rgba(234, 67, 53, 1)) drop-shadow(0 0 18px rgba(234, 67, 53, 0.7));
+  color: #ea4335 !important;
+  transform: scale(1.15);
+}
+
+.social-glow-coffee {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.social-glow-coffee:hover {
+  border-color: rgba(255, 221, 0, 0.6) !important;
+  background-color: rgba(255, 221, 0, 0.12) !important;
+  box-shadow: 0 0 24px rgba(255, 221, 0, 0.45), inset 0 0 12px rgba(255, 221, 0, 0.18) !important;
+  transform: translateY(-2px);
+  color: #ffdd00 !important;
+}
+.social-glow-coffee:hover .social-icon {
+  filter: drop-shadow(0 0 8px rgba(255, 221, 0, 1)) drop-shadow(0 0 18px rgba(255, 221, 0, 0.65));
+  color: #ffdd00 !important;
+  transform: scale(1.15);
+}
+
+/* =========================================================================
+   CIRCULAR AVATAR ANIMATION & PURPLE HOVER HIGHLIGHT
+   ========================================================================= */
+
+@keyframes float-avatar {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-avatar {
+  animation: float-avatar 5s ease-in-out infinite;
+}
+
+.avatar-cyber-ring {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Circular Avatar All-Around Purple Shadow */
+.avatar-purple-glow {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border-color: transparent !important;
+  box-shadow: 0 16px 30px -8px rgba(0, 0, 0, 0.85);
+}
+
+.avatar-link:hover .avatar-purple-glow,
+.avatar-purple-glow:hover {
+  border-color: transparent !important;
+  box-shadow: 
+    0 0 35px rgba(168, 85, 247, 0.7),
+    0 0 70px rgba(147, 51, 234, 0.45),
+    inset 0 0 20px rgba(192, 132, 252, 0.25) !important;
+}
+
+.avatar-ambient-glow {
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.avatar-link:hover .avatar-ambient-glow {
+  opacity: 1 !important;
+  transform: scale(1.1);
+}
+
+.avatar-link:hover .avatar-badge {
+  border-color: rgba(168, 85, 247, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4) !important;
+  color: #e9d5ff !important;
+}
+
+/* =========================================================================
+   CONTACT SOCIAL MEDIA ICONS - BRAND COLOR HOVER LIGHTING EFFECTS
+   ========================================================================= */
+
+.social-glow-gmail,
+.social-glow-github,
+.social-glow-linkedin {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: visible;
+}
+
+.social-glow-gmail img,
+.social-glow-github img,
+.social-glow-linkedin img {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Gmail Primary Lighting Glow (#EA4335) */
+.social-glow-gmail:hover,
+.social-glow-gmail:focus-visible {
+  border-color: #ea4335 !important;
+  background-color: rgba(234, 67, 53, 0.16) !important;
+  box-shadow: 
+    0 0 22px rgba(234, 67, 53, 0.65),
+    0 0 45px rgba(234, 67, 53, 0.35),
+    inset 0 0 14px rgba(234, 67, 53, 0.22) !important;
+  transform: translateY(-2px) scale(1.08) !important;
+  outline: none;
+}
+
+.social-glow-gmail:hover img,
+.social-glow-gmail:focus-visible img {
+  filter: drop-shadow(0 0 10px rgba(234, 67, 53, 0.95));
+  transform: scale(1.12);
+}
+
+/* GitHub Primary Lighting Glow (#FFFFFF / Crisp Bright White) */
+.social-glow-github:hover,
+.social-glow-github:focus-visible {
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 
+    0 0 22px rgba(255, 255, 255, 0.65),
+    0 0 45px rgba(255, 255, 255, 0.35),
+    inset 0 0 14px rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px) scale(1.08) !important;
+  outline: none;
+}
+
+.social-glow-github:hover img,
+.social-glow-github:focus-visible img {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+  transform: scale(1.12);
+}
+
+/* LinkedIn Primary Lighting Glow (#0A66C2 / LinkedIn Blue) */
+.social-glow-linkedin:hover,
+.social-glow-linkedin:focus-visible {
+  border-color: #0a66c2 !important;
+  background-color: rgba(10, 102, 194, 0.18) !important;
+  box-shadow: 
+    0 0 22px rgba(10, 102, 194, 0.75),
+    0 0 45px rgba(10, 102, 194, 0.42),
+    inset 0 0 14px rgba(10, 102, 194, 0.25) !important;
+  transform: translateY(-2px) scale(1.08) !important;
+  outline: none;
+}
+
+.social-glow-linkedin:hover img,
+.social-glow-linkedin:focus-visible img {
+  filter: drop-shadow(0 0 10px rgba(10, 102, 194, 1));
+  transform: scale(1.12);
+}
+
+/* LeetCode Primary Lighting Glow (#FFA116 / LeetCode Amber-Orange) */
+.social-glow-leetcode {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: visible;
+}
+
+.social-glow-leetcode img,
+.social-glow-leetcode .social-icon {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-glow-leetcode:hover,
+.social-glow-leetcode:focus-visible {
+  border-color: #ffa116 !important;
+  background-color: rgba(255, 161, 22, 0.16) !important;
+  box-shadow: 
+    0 0 22px rgba(255, 161, 22, 0.7),
+    0 0 45px rgba(255, 161, 22, 0.38),
+    inset 0 0 14px rgba(255, 161, 22, 0.22) !important;
+  transform: translateY(-2px) scale(1.08) !important;
+  outline: none;
+  color: #ffa116 !important;
+}
+
+.social-glow-leetcode:hover img,
+.social-glow-leetcode:hover .social-icon,
+.social-glow-leetcode:focus-visible img,
+.social-glow-leetcode:focus-visible .social-icon {
+  filter: drop-shadow(0 0 10px rgba(255, 161, 22, 1));
+  transform: scale(1.12);
+}
+
+/* Buy Me a Coffee Primary Lighting Glow (#FFDD00 / Coffee Yellow) */
+.social-glow-coffee {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: visible;
+}
+
+.social-glow-coffee img,
+.social-glow-coffee .social-icon {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-glow-coffee:hover,
+.social-glow-coffee:focus-visible {
+  border-color: #ffdd00 !important;
+  background-color: rgba(255, 221, 0, 0.16) !important;
+  box-shadow: 
+    0 0 22px rgba(255, 221, 0, 0.65),
+    0 0 45px rgba(255, 221, 0, 0.35),
+    inset 0 0 14px rgba(255, 221, 0, 0.2) !important;
+  transform: translateY(-2px) scale(1.08) !important;
+  outline: none;
+  color: #ffdd00 !important;
+}
+
+.social-glow-coffee:hover img,
+.social-glow-coffee:hover .social-icon,
+.social-glow-coffee:focus-visible img,
+.social-glow-coffee:focus-visible .social-icon {
+  filter: drop-shadow(0 0 10px rgba(255, 221, 0, 1));
+  transform: scale(1.12);
+}
+
+/* =========================================================================
+   SKILL BADGE CHIPS - INDIVIDUAL BRAND COLOR LIGHTING EFFECTS
+   ========================================================================= */
+
+.skill-badge-chip {
+  --skill-color: #10b981;
+  --skill-rgb: 16, 185, 129;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  border-color: #30363d;
+  background-color: #0d1117;
+  color: #d1d5db;
+}
+
+.skill-badge-chip img {
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-badge-chip:hover,
+.skill-badge-chip:focus-visible {
+  border-color: var(--skill-color) !important;
+  background-color: rgba(var(--skill-rgb), 0.16) !important;
+  box-shadow: 
+    0 0 16px rgba(var(--skill-rgb), 0.55),
+    0 0 32px rgba(var(--skill-rgb), 0.25),
+    inset 0 0 10px rgba(var(--skill-rgb), 0.2) !important;
+  transform: translateY(-2px) scale(1.05) !important;
+  color: #ffffff !important;
+  outline: none;
+}
+
+.skill-badge-chip:hover img,
+.skill-badge-chip:focus-visible img {
+  transform: scale(1.18) !important;
+  filter: drop-shadow(0 0 8px rgba(var(--skill-rgb), 0.95)) !important;
+}
+
+

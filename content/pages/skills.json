@@ -1,0 +1,119 @@
+{
+  "sectionTag": "02 // TECH STACK",
+  "title": "Technical Stack",
+  "subtitle": "The technologies and tools I work with.",
+  "techBranches": [
+    {
+      "id": "languages",
+      "name": "Languages",
+      "branchName": "feat/languages",
+      "subtitle": "Programming languages I use",
+      "skills": [
+        {
+          "name": "C++",
+          "icon": "/icons/c-plusplus.svg"
+        },
+        {
+          "name": "Python",
+          "icon": "/icons/python.svg"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "/icons/javascript.svg"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/icons/typescript.svg"
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "branchName": "feat/frontend",
+      "subtitle": "Frontend frameworks and tools",
+      "skills": [
+        {
+          "name": "HTML5",
+          "icon": "/icons/html5.svg"
+        },
+        {
+          "name": "CSS3",
+          "icon": "/icons/css3.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "/icons/tailwind-css.svg"
+        },
+        {
+          "name": "React",
+          "icon": "/icons/react.svg"
+        },
+        {
+          "name": "Redux",
+          "icon": "/icons/redux.svg"
+        },
+        {
+          "name": "Next.js",
+          "icon": "/icons/nextdotjs.svg"
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "branchName": "feat/backend",
+      "subtitle": "Backend APIs and server runtimes",
+      "skills": [
+        {
+          "name": "Node.js",
+          "icon": "/icons/nodejs.svg"
+        },
+        {
+          "name": "Express",
+          "icon": "/icons/expressdotjs.svg"
+        },
+        {
+          "name": "REST APIs",
+          "icon": "/icons/rest-api.svg"
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "name": "Database",
+      "branchName": "feat/database",
+      "subtitle": "Databases and data storage",
+      "skills": [
+        {
+          "name": "MongoDB",
+          "icon": "/icons/mongodb.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "/icons/postgresql.svg"
+        },
+        {
+          "name": "Redis",
+          "icon": "/icons/redis.svg"
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "branchName": "feat/devops",
+      "subtitle": "DevOps, tools, and deployment",
+      "skills": [
+        {
+          "name": "Git",
+          "icon": "/icons/git.svg"
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "/icons/github-actions.svg"
+        }
+      ]
+    }
+  ]
+}
