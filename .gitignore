@@ -18,6 +18,7 @@
 /tina/__generated__
 tina/__generated__
 .tina/__generated__
+/public/admin
 
 # Environment variables & local secrets
 .env

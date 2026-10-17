@@ -1,10 +1,9 @@
-// Type-safe TinaCMS configuration helper that operates cleanly without native C++ better-sqlite3 build dependencies
-type TinaConfig = Record<string, unknown>;
-export const defineConfig = <T extends TinaConfig>(config: T): T => config;
+import { defineConfig } from "tinacms";
 
 const branch =
   process.env.GITHUB_BRANCH ||
   process.env.VERCEL_GIT_COMMIT_REF ||
+  process.env.NEXT_PUBLIC_TINA_BRANCH ||
   process.env.HEAD ||
   "main";
 
