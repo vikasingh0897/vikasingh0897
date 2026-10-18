@@ -1,0 +1,42 @@
+name: Sync README from TinaCMS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/**"
+      - "scripts/update-readme.mjs"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate updated README.md
+        run: node scripts/update-readme.mjs
+
+      - name: Commit and push changes if README changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes in README.md"
+          else
+            git commit -m "chore(readme): sync README with TinaCMS content [skip ci]"
+            git push
+          fi
