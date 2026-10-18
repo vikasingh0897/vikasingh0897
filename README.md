@@ -13,8 +13,6 @@
   <a href="https://linkedin.com/in/vikasingh0897"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:vikasingh0897@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
 
-  <br /><br />
-
   <h2>Achievements</h2>
 
   <p align="center">
@@ -28,13 +26,11 @@
   </p>
 </div>
 
-<br />
-
 ---
 
-## Technical Expertise →
-
 <div align="center">
+
+## ← Technical Expertise →
 
 ### Languages
 
@@ -71,7 +67,45 @@
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
+
+## ← 3D Contribution Graph →
+
+  <a href="#3d-graph" id="3d-graph">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
+  </a>
+
+</div>
+
+---
+
+<div align="center">
+
+## ← Get In Touch →
+
+<p align="center">
+  <a href="mailto:vikasingh0897@gmail.com">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/gmail.svg" width="36" height="36" alt="Gmail" title="Gmail" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/vikasingh0897">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/github.svg" width="36" height="36" alt="GitHub" title="GitHub" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/vikasingh0897">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/linkedin.svg" width="36" height="36" alt="LinkedIn" title="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://leetcode.com/u/vikasingh0897/">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/leetcode.svg" width="36" height="36" alt="LeetCode" title="LeetCode" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://buymeacoffee.com/vikasingh0897">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/buy-me-a-coffee.svg" width="36" height="36" alt="Buy Me a Coffee" title="Buy Me a Coffee" />
+  </a>
+</p>
+
+<p>If you have a project in mind or an open role, I’d love to hear about it. Let’s <a href="https://linkedin.com/in/vikasingh0897"><b>connect</b></a>!</p>
+
 </div>
 
 ---

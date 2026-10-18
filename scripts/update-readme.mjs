@@ -9,9 +9,26 @@ const rootDir = path.resolve(__dirname, "..");
 // 1. Read JSON content from TinaCMS files
 const aboutPath = path.join(rootDir, "content", "pages", "about.json");
 const skillsPath = path.join(rootDir, "content", "pages", "skills.json");
+const contactPath = path.join(rootDir, "content", "pages", "contact.json");
 
 const about = JSON.parse(fs.readFileSync(aboutPath, "utf-8"));
 const skills = JSON.parse(fs.readFileSync(skillsPath, "utf-8"));
+const contact = fs.existsSync(contactPath)
+  ? JSON.parse(fs.readFileSync(contactPath, "utf-8"))
+  : {};
+
+const contactTitle = contact.title || "Get In Touch";
+const contactSubtitleRaw =
+  contact.subtitle ||
+  "If you have a project in mind or an open role, I’d love to hear about it. Let’s connect!";
+
+// Make "connect" clickable redirecting to LinkedIn
+const contactSubtitle = contactSubtitleRaw.includes("connect")
+  ? contactSubtitleRaw.replace(
+      /connect/gi,
+      '<a href="https://linkedin.com/in/vikasingh0897"><b>connect</b></a>'
+    )
+  : `${contactSubtitleRaw} <a href="https://linkedin.com/in/vikasingh0897"><b>Let’s connect!</b></a>`;
 
 // 2. Personal configuration data
 const name = "Vikas Singh";
@@ -84,8 +101,6 @@ const readmeContent = `<div align="center">
   <a href="https://linkedin.com/in/vikasingh0897"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:vikasingh0897@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
 
-  <br /><br />
-
   <h2>Achievements</h2>
 
   <p align="center">
@@ -93,13 +108,11 @@ ${achievementsHtml}
   </p>
 </div>
 
-<br />
-
 ---
 
-## Technical Expertise →
-
 <div align="center">
+
+## ← Technical Expertise →
 
 ${skillsSectionsHtml}
 
@@ -108,7 +121,45 @@ ${skillsSectionsHtml}
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
+
+## ← 3D Contribution Graph →
+
+  <a href="#3d-graph" id="3d-graph">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
+  </a>
+
+</div>
+
+---
+
+<div align="center">
+
+## ← ${contactTitle} →
+
+<p align="center">
+  <a href="mailto:vikasingh0897@gmail.com">
+    <img src="${rawBaseUrl}/icons/gmail.svg" width="36" height="36" alt="Gmail" title="Gmail" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/vikasingh0897">
+    <img src="${rawBaseUrl}/icons/github.svg" width="36" height="36" alt="GitHub" title="GitHub" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/vikasingh0897">
+    <img src="${rawBaseUrl}/icons/linkedin.svg" width="36" height="36" alt="LinkedIn" title="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://leetcode.com/u/vikasingh0897/">
+    <img src="${rawBaseUrl}/icons/leetcode.svg" width="36" height="36" alt="LeetCode" title="LeetCode" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://buymeacoffee.com/vikasingh0897">
+    <img src="${rawBaseUrl}/icons/buy-me-a-coffee.svg" width="36" height="36" alt="Buy Me a Coffee" title="Buy Me a Coffee" />
+  </a>
+</p>
+
+<p>${contactSubtitle}</p>
+
 </div>
 
 ---
