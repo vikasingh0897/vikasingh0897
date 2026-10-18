@@ -8,7 +8,8 @@
     "dev": "tinacms dev -c \"next dev\"",
     "build": "tinacms build --skip-cloud-checks && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync:readme": "node scripts/update-readme.mjs"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
