@@ -77,7 +77,7 @@ const skillsSectionsHtml = (skills.techBranches || [])
     const skillsRow = (branch.skills || [])
       .map(
         (s) =>
-          `<img src="${resolveAssetUrl(s.icon)}" width="42" height="42" alt="${s.name}" title="${s.name}" />`
+          `<a href="#tech-expertise"><img src="${resolveAssetUrl(s.icon)}" width="42" height="42" alt="${s.name}" title="${s.name}" /></a>`
       )
       .join(" &nbsp;&nbsp;&nbsp;&nbsp; ");
 
@@ -101,7 +101,7 @@ const readmeContent = `<div align="center">
   <a href="https://linkedin.com/in/vikasingh0897"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:vikasingh0897@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
 
-  <h2>Achievements</h2>
+  <h2>← Achievements →</h2>
 
   <p align="center">
 ${achievementsHtml}
@@ -110,7 +110,7 @@ ${achievementsHtml}
 
 ---
 
-<div align="center">
+<div align="center" id="tech-expertise">
 
 ## ← Technical Expertise →
 
@@ -120,12 +120,12 @@ ${skillsSectionsHtml}
 
 ---
 
-<div align="center">
+<div align="center" id="3d-graph">
 
 ## ← 3D Contribution Graph →
 
-  <a href="#3d-graph" id="3d-graph">
-    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
+  <a href="#3d-graph">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/output/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
   </a>
 
 </div>

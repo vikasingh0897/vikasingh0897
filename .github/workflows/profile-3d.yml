@@ -28,14 +28,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           USERNAME: vikasingh0897
 
-      - name: Commit & Push changes
+      - name: Commit & Push to output branch
         run: |
+          mkdir -p dist/profile-3d-contrib
+          cp -r profile-3d-contrib/* dist/
+          cp -r profile-3d-contrib/* dist/profile-3d-contrib/
+          cd dist
+          git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A profile-3d-contrib/
-          if git diff --staged --quiet; then
-            echo "No changes in 3D graph"
-          else
-            git commit -m "chore: update 3d contribution graph [skip ci]"
-            git push
-          fi
+          git checkout -b output
+          git add -A
+          git commit -m "chore: update 3d contribution graph [skip ci]"
+          git push -f "https://x-access-token:${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output
+
