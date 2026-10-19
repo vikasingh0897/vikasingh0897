@@ -13,7 +13,7 @@
   <a href="https://linkedin.com/in/vikasingh0897"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:vikasingh0897@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
 
-  <h2>Achievements</h2>
+  <h2>← Achievements →</h2>
 
   <p align="center">
     <a href="https://github.com/vikasingh0897?achievement=pull-shark&tab=achievements" title="Pull Shark: Merged pull requests into active repositories">
@@ -28,50 +28,50 @@
 
 ---
 
-<div align="center">
+<div align="center" id="tech-expertise">
 
 ## ← Technical Expertise →
 
 ### Languages
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/c-plusplus.svg" width="42" height="42" alt="C++" title="C++" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/python.svg" width="42" height="42" alt="Python" title="Python" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/javascript.svg" width="42" height="42" alt="JavaScript" title="JavaScript" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/typescript.svg" width="42" height="42" alt="TypeScript" title="TypeScript" />
+  <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/c-plusplus.svg" width="42" height="42" alt="C++" title="C++" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/python.svg" width="42" height="42" alt="Python" title="Python" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/javascript.svg" width="42" height="42" alt="JavaScript" title="JavaScript" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/typescript.svg" width="42" height="42" alt="TypeScript" title="TypeScript" /></a>
 </p>
 
 ### Frontend
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/html5.svg" width="42" height="42" alt="HTML5" title="HTML5" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/css3.svg" width="42" height="42" alt="CSS3" title="CSS3" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/tailwind-css.svg" width="42" height="42" alt="Tailwind CSS" title="Tailwind CSS" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/react.svg" width="42" height="42" alt="React" title="React" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/redux.svg" width="42" height="42" alt="Redux" title="Redux" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/nextdotjs.svg" width="42" height="42" alt="Next.js" title="Next.js" />
+  <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/html5.svg" width="42" height="42" alt="HTML5" title="HTML5" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/css3.svg" width="42" height="42" alt="CSS3" title="CSS3" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/tailwind-css.svg" width="42" height="42" alt="Tailwind CSS" title="Tailwind CSS" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/react.svg" width="42" height="42" alt="React" title="React" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/redux.svg" width="42" height="42" alt="Redux" title="Redux" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/nextdotjs.svg" width="42" height="42" alt="Next.js" title="Next.js" /></a>
 </p>
 
 ### Backend
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/nodejs.svg" width="42" height="42" alt="Node.js" title="Node.js" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/expressdotjs.svg" width="42" height="42" alt="Express" title="Express" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/rest-api.svg" width="42" height="42" alt="REST APIs" title="REST APIs" />
+  <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/nodejs.svg" width="42" height="42" alt="Node.js" title="Node.js" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/expressdotjs.svg" width="42" height="42" alt="Express" title="Express" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/rest-api.svg" width="42" height="42" alt="REST APIs" title="REST APIs" /></a>
 </p>
 
 ### Database
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/mongodb.svg" width="42" height="42" alt="MongoDB" title="MongoDB" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/postgresql.svg" width="42" height="42" alt="PostgreSQL" title="PostgreSQL" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/redis.svg" width="42" height="42" alt="Redis" title="Redis" />
+  <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/mongodb.svg" width="42" height="42" alt="MongoDB" title="MongoDB" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/postgresql.svg" width="42" height="42" alt="PostgreSQL" title="PostgreSQL" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/redis.svg" width="42" height="42" alt="Redis" title="Redis" /></a>
 </p>
 
 ### DevOps
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/git.svg" width="42" height="42" alt="Git" title="Git" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/github-actions.svg" width="42" height="42" alt="GitHub Actions" title="GitHub Actions" />
+  <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/git.svg" width="42" height="42" alt="Git" title="Git" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#tech-expertise"><img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/public/icons/github-actions.svg" width="42" height="42" alt="GitHub Actions" title="GitHub Actions" /></a>
 </p>
 
 </div>
 
 ---
 
-<div align="center">
+<div align="center" id="3d-graph">
 
 ## ← 3D Contribution Graph →
 
-  <a href="#3d-graph" id="3d-graph">
-    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
+  <a href="#3d-graph">
+    <img src="https://raw.githubusercontent.com/vikasingh0897/vikasingh0897/output/profile-night-green.svg" alt="3D Contribution Graph" width="100%">
   </a>
 
 </div>
